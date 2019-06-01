@@ -2,6 +2,10 @@
   margin: 1px;
 } */
 
+body {
+  background-color: black;
+}
+
 /* .brick { */
 div.row div {
   height: 20px;
@@ -18,4 +22,11 @@ div.coin {
   background: url('coin.gif');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+div.pacman {
+  background: url('pacman.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
