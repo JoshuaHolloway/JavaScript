@@ -24,6 +24,9 @@ div.coin {
   background-position: center;
 }
 
+div.empty {
+}
+
 div.pacman {
   background: url('pacman.gif');
   background-repeat: no-repeat;

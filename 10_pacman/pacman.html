@@ -11,70 +11,52 @@
   <!-- ===================================================================== -->
   <body>
 
-      <div class="row">
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-      </div>
+      <div id="world"></div>
 
-      <div class="row">
-        <div class="brick"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="pacman"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="brick"></div>
-      </div>
+      <script>
+        // list of features to build
 
-      <div class="row">
-        <div class="brick"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="brick"></div>
-      </div>
+        // 1) Have JS display the world of brick/coin/etc
+        // 2) Have the pacman move up and down
+        // 3)
 
-      <div class="row">
-        <div class="brick"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="brick"></div>
-      </div>
+        var world =  [
+          [2,2,2,2,2,2,2,2,2,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,1,1,1,1,1,1,1,2],
+          [2,2,2,2,2,2,2,2,2,2]
+        ];
 
-      <div class="row">
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-        <div class="brick"></div>
-      </div>
+        function displayWorld() {
+          var output = '';
+          for(var i = 0; i < world.length; i++) {
+            // console.log(i);
+            output += "\n<div class = 'row'>";
+            for(var j = 0; j < world[i].length; j++) {
+              // console.log(j);
+
+              if (world[i][j] == 2)
+                output += "\n\t<div class = 'brick'></div>";
+              else if(world[i][j] == 1)
+                output += "\n\t<div class = 'coin'></div>";
+              else
+                output += "\n\t<div class = 'empty'></div>";
+              //output = output + world[i][j];
+            }
+            output += "\n</div>";
+          }
+          console.log(output);
+          // document.getElementById('world').innerHTML = output;
+          document.getElementById('world').innerHTML = output;
+        }
+      </script>
+
+
   </body>
   <!-- ===================================================================== -->
 </html>
