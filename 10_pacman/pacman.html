@@ -11,49 +11,62 @@
   <!-- ===================================================================== -->
   <body>
 
+      <div id="container"></div>
       <div id="world"></div>
+      <div id="pacman"></div>
 
       <script>
         // list of features to build
 
-        // 1) Have JS display the world of brick/coin/etc
+        // 1) Have JS display the world of brick/coin/etc - DONE!
         // 2) Have the pacman move up and down
-        // 3)
 
         var world =  [
           [2,2,2,2,2,2,2,2,2,2],
-          [2,1,1,1,1,1,1,1,1,2],
-          [2,1,1,1,1,1,1,1,1,2],
-          [2,1,1,1,1,1,1,1,1,2],
-          [2,1,1,1,1,1,1,1,1,2],
-          [2,1,1,1,1,1,1,1,1,2],
-          [2,1,1,1,1,1,1,1,1,2],
+          [2,1,2,1,1,1,1,1,1,2],
+          [2,1,2,1,1,2,2,2,1,2],
+          [2,1,2,1,1,2,1,2,1,2],
+          [2,1,2,1,1,2,1,2,1,2],
+          [2,1,2,1,1,2,1,2,1,2],
+          [2,1,2,2,2,2,1,2,1,2],
           [2,1,1,1,1,1,1,1,1,2],
           [2,2,2,2,2,2,2,2,2,2]
         ];
 
+        // Iterate through world and create output
         function displayWorld() {
           var output = '';
           for(var i = 0; i < world.length; i++) {
             // console.log(i);
-            output += "\n<div class = 'row'>";
+            output += "<div class='row' id='josh'>";
             for(var j = 0; j < world[i].length; j++) {
               // console.log(j);
 
               if (world[i][j] == 2)
-                output += "\n\t<div class = 'brick'></div>";
+                output += "<div class='brick'></div>";
               else if(world[i][j] == 1)
-                output += "\n\t<div class = 'coin'></div>";
+                output += "<div class='coin'></div>";
               else
-                output += "\n\t<div class = 'empty'></div>";
+                output += "<div class='empty'></div>";
               //output = output + world[i][j];
             }
-            output += "\n</div>";
+            output += "</div>";
           }
           console.log(output);
           // document.getElementById('world').innerHTML = output;
           document.getElementById('world').innerHTML = output;
         }
+
+        // Display that shit
+        displayWorld();
+
+        // Callback:
+        // -upon key-down browser executes function
+        //  and passes in object e
+        document.onkeydown = function(e) {
+          log(e);
+        }
+        
       </script>
 
 
