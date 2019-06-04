@@ -34,8 +34,8 @@
         ];
 
         var pacman = {
-          x: 40,
-          y: 40
+          x: 20,
+          y: 20
         }
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // Iterate through world and create output
@@ -76,12 +76,18 @@
         //  and passes in object e
         document.onkeydown = function(e) {
           var key = e.keyCode;
-          // if (key==38) // up
-          // if (key==39) // right
-          // if (key==40) // down
+          if (key==38) // up
+            pacman.y -= 20;
+          if (key==39) // right
+            pacman.x += 20;
+          if (key==40) // down
+            pacman.y += 20;
           if (key==37) // left;
-            document.getElementById('pacman').style.left = 50+"px";
-          console.log(e.keyCode);
+            pacman.x -= 20;
+          // console.log(e.keyCode);
+
+          // update pacman
+          displayPacman();
         }
 
       </script>
