@@ -33,6 +33,11 @@
           [2,2,2,2,2,2,2,2,2,2]
         ];
 
+        var pacman = {
+          x: 40,
+          y: 40
+        }
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // Iterate through world and create output
         function displayWorld() {
           var output = '';
@@ -56,17 +61,29 @@
           // document.getElementById('world').innerHTML = output;
           document.getElementById('world').innerHTML = output;
         }
-
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        function displayPacman() {
+          document.getElementById('pacman').style.top = pacman.y+"px";
+          document.getElementById('pacman').style.left = pacman.x+"px";
+        }
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // Display that shit
         displayWorld();
+        displayPacman();
 
         // Callback:
-        // -upon key-down browser executes function
+        // -upon key-down browser executes callback
         //  and passes in object e
         document.onkeydown = function(e) {
-          log(e);
+          var key = e.keyCode;
+          // if (key==38) // up
+          // if (key==39) // right
+          // if (key==40) // down
+          if (key==37) // left;
+            document.getElementById('pacman').style.left = 50+"px";
+          console.log(e.keyCode);
         }
-        
+
       </script>
 
 

@@ -6,16 +6,15 @@ body {
 }
 
 * {
-  /* margin: 0px; */
-  /* border: 0px; */
-  /* padding: 0px; */
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
 #josh {
   margin: 0px;
   border: 0px;
   padding: 0px;
-
   line-height: 0;
 }
 
