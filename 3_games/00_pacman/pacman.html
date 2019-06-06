@@ -7,14 +7,19 @@
 
     <!-- http://jogueja.com/theme/AMThemes/JogueJa/images/mario/coin_ani.gif -->
     <!-- https://upload.wikimedia.org/wikipedia/en/5/5f/Pacman.gif -->
+    </div>
   </head>
   <!-- ===================================================================== -->
   <body>
 
-      <div id="container"></div>
-      <div id="world"></div>
-      <div id="pacman"></div>
+      <!-- Graphics -->
+      <div id="container">
+        <div id="world"></div>
+        <div id="pacman"></div>
+        <div id="score">0</div>
+      </div>
 
+      <!-- Game-Logic -->
       <script>
         // list of features to build
 
@@ -23,7 +28,7 @@
 
         var world =  [
           [2,2,2,2,2,2,2,2,2,2],
-          [2,1,2,1,1,1,1,1,1,2],
+          [2,0,2,1,1,1,1,1,1,2],
           [2,1,2,1,1,2,2,2,1,2],
           [2,1,2,1,1,2,1,2,1,2],
           [2,1,2,1,1,2,1,2,1,2],
@@ -33,9 +38,11 @@
           [2,2,2,2,2,2,2,2,2,2]
         ];
 
+        var score = 0;
+
         var pacman = {
-          x: 20,
-          y: 20
+          x: 1,
+          y: 1
         }
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // Iterate through world and create output
@@ -51,23 +58,25 @@
                 output += "<div class='brick'></div>";
               else if(world[i][j] == 1)
                 output += "<div class='coin'></div>";
-              else
+              if(world[i][j] == 0)
                 output += "<div class='empty'></div>";
               //output = output + world[i][j];
             }
             output += "</div>";
           }
-          console.log(output);
-          // document.getElementById('world').innerHTML = output;
+          // console.log(output);
           document.getElementById('world').innerHTML = output;
         }
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         function displayPacman() {
-          document.getElementById('pacman').style.top = pacman.y+"px";
-          document.getElementById('pacman').style.left = pacman.x+"px";
+          document.getElementById('pacman').style.top = 20*pacman.y+"px";
+          document.getElementById('pacman').style.left = 20*pacman.x+"px";
         }
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        // Display that shit
+        function displayScore() {
+          document.getElementById('score').innerHTML = score;
+        }
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         displayWorld();
         displayPacman();
 
@@ -76,16 +85,24 @@
         //  and passes in object e
         document.onkeydown = function(e) {
           var key = e.keyCode;
-          if (key==38) // up
-            pacman.y -= 20;
-          if (key==39) // right
-            pacman.x += 20;
-          if (key==40) // down
-            pacman.y += 20;
-          if (key==37) // left;
-            pacman.x -= 20;
+
+          if (key==38 && world[pacman.y-1][pacman.x] !=2) // up
+            pacman.y--;
+          if (key==39 && world[pacman.y][pacman.x+1] !=2) // right
+            pacman.x++;
+          if (key==40 && world[pacman.y+1][pacman.x] !=2) // down
+            pacman.y++;
+          if (key==37  && world[pacman.y][pacman.x-1] !=2) // left;
+            pacman.x--;
           // console.log(e.keyCode);
 
+          // Eat coins
+          if(world[pacman.y][pacman.x] == 1) {
+            world[pacman.y][pacman.x] = 0;
+            score += 100;
+             displayWorld();
+             displayScore();
+          }
           // update pacman
           displayPacman();
         }
