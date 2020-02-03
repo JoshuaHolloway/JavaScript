@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Singly-Linked-List</title>
+    <script>
+      // https://visualgo.net/en/list
+      // https://developers.google.com/web/tools/chrome-devtools/javascript/
+
+      // piece of data - val
+      // reference to next-node -> next
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      class Node {
+        constructor(val) {
+          this.val = val;
+          this.next = null;
+        }
+      }
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      class SinglyLinkedList{
+        constructor() {
+          this.head = null; // Pointer to head
+          this.tail = null; // Pointer to tail
+          this.length = 0; // Length
+        } // constructor()
+
+        push(val) {
+          // Step 1: Accept new value
+          // Step 2: Create new node with value
+          var newNode = new Node(val)
+
+          // Step 3:
+          //  -If there is no head property on the list,
+          //   set the head and tail to be the newly created node [edge case: empty]
+          if (!this.head) {
+            this.head = newNode;
+            this.tail = this.head;
+          }
+          else
+          {
+            //  -Else, set to next property on the tail to be the new node
+            //   and set the tail property on the list to be the newly created node
+
+          }
+
+
+
+
+          // Step 4: Increment the length by 1
+        } // push()
+      } // SinglyLinkedList class
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      var first = new Node("Hi");
+      first.next = new Node("there");
+      first.next.next = new Node("how");
+      first.next.next.next = new Node("are");
+      first.next.next.next.next = new Node("you");
+
+      list.push("Hello");
+      list.push("Goodbye");
+
+    </script>
+  </head>
+  <!-- ===================================================================== -->
+  <body>
+
+  </body>
+</html>
