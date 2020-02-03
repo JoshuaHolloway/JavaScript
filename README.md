@@ -10,6 +10,7 @@
     * 04: Garbage Collection
 
 * 06 - Section 6: More on Functions
+    * 00: 
     
     *********************************
     * 00: 
