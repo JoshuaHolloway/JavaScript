@@ -17,6 +17,7 @@
     * 02: Functions Expressions: Storing Functions in Variables
     *********************************
 
+
 ### 9_advanced
 * 00 - Threads
     * 00: Web Workers vs. Service Workers vs. Worklets
