@@ -13,9 +13,10 @@
     * 00: Functions vs. Methods 
     * 01: Functions are Objects!
     * 02: Functions Expressions: Storing Functions in Variables
+    * 03: Function Expressions vs. Function Declarations (Statements)
 
     *********************************
-    * 03: Function Expressions vs. Function Declarations (Statements)
+    * 04: Anonymous Functions
     *********************************
 
 
