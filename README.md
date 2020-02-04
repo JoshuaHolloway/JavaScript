@@ -14,9 +14,10 @@
     * 01: Functions are Objects!
     * 02: Functions Expressions: Storing Functions in Variables
     * 03: Function Expressions vs. Function Declarations (Statements)
+    * 04: Anonymous Functions
 
     *********************************
-    * 04: Anonymous Functions
+    * 05: Adding user choice to the game
     *********************************
 
 
