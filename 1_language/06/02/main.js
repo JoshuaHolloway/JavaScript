@@ -48,12 +48,12 @@ startGameBtn.addEventListener('click', startGame);
 // If you assign a function to a variable then you invole that variable name
 start(); // Instead of startGame()
 
-// This is a FUNCTION STATEMENT:
+// This is a Function EXPRESSION:
 // const start = function startGame() {
 //     console.log('Game is starting');
 // }
 
-// This is a FUNCTION DECLARATION:
+// This is a Function STATEMENT/DECLARATION:
 // function startGame() {
 //     console.log('Game is starting');
 // }
