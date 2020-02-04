@@ -5,15 +5,15 @@
     * 00: var vs. let and const
     * 01: Strict mode
     * 02: How code is parsed and compiled / Inside the JS engine - How the code executes
-    * 03_a: Primitives vs. Reference Values (and Spread Operator)
-    * 03_b: Primitives vs. Reference Values (Equality and cont)
-    * 04: Garbage Collection
+    * 03_a: Primitives vs. reference values (and Spread Operator)
+    * 03_b: Primitives vs. reference values (equality and cont)
+    * 04: Garbage collection
 
-* 06 - Section 6: More on Functions
-    * 00: 
+* 06 - Section 6: More on functions
+    * 00: Functions vs. Methods 
     
     *********************************
-    * 00: 
+    * 01: Functions are Objects!
     *********************************
 
 ### 9_advanced
