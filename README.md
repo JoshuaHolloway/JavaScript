@@ -27,8 +27,10 @@
     * 013: bind()
 
 * 07 - Section 7: Working with the DOM
-    *********************************
     * 000: Document Object Model
+
+    *********************************
+    * 001: Selecting elements in the DOM
     *********************************
 
 * 30 - Section 30: Performance and Optimization
