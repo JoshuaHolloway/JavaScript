@@ -28,7 +28,6 @@
 
 * 07 - Section 7: Working with the DOM
     * 000: Document Object Model
-
     *********************************
     * 001: Selecting elements in the DOM
     *********************************
