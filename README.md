@@ -27,13 +27,19 @@
     * 013: bind()
 
 * 07 - Section 7: Working with the DOM
-    * 000: Document Object Model
+    * 700: Document and Window Object
+    * 701: Understanding the DOM and how it's created
+    * 702: Selecting elements in the DOM
+    * 703: Exploring and changing DOM properties
+
     *********************************
-    * 001: Selecting elements in the DOM
+    * 704: Attributes vs. Properties
     *********************************
 
+    * 705: Selecting multiple elements and summary
+
 * 30 - Section 30: Performance and Optimization
-    * 000: 
+    * 3000: 
 
 ### 9_advanced
 * 00 - Threads
