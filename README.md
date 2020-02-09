@@ -31,12 +31,13 @@
     * 701: Understanding the DOM and how it's created
     * 702: Selecting elements in the DOM
     * 703: Exploring and changing DOM properties
-
-    *********************************
     * 704: Attributes vs. Properties
+
+    *********************************
+    * 705: Selecting multiple elements
     *********************************
 
-    * 705: Selecting multiple elements and summary
+    
 
 * 30 - Section 30: Performance and Optimization
     * 3000: 
