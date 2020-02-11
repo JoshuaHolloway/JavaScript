@@ -32,12 +32,21 @@
     * 702: Selecting elements in the DOM
     * 703: Exploring and changing DOM properties
     * 704: Attributes vs. Properties
-
-    *********************************
     * 705: Selecting multiple elements
+
+    *********************************
+    * 706: Traversing the DOM
     *********************************
 
-    
+    * 707: Traversing child nodes
+
+
+* 08 - Section 8: Arrays and Itterables
+    *********************************
+    * 800: 
+        * What are 'iterables' and 'array-like' objects
+        * Creating arrays
+    *********************************
 
 * 30 - Section 30: Performance and Optimization
     * 3000: 
