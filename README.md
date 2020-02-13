@@ -48,6 +48,15 @@
         * Creating arrays
     *********************************
 
+* 09 - Section 9: More on Objects
+    *********************************
+    * 900:
+        * What's an object?
+        * Objects vs. primimtive values
+        * Objects recap
+    *********************************
+
+
 * 30 - Section 30: Performance and Optimization
     * 3000: 
 
