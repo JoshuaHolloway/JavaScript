@@ -39,21 +39,42 @@
     *********************************
 
     * 707: Traversing child nodes
+    * 708: Using parentNode and parentElement
+    * 709: Selecting sibling elements
+    * 710: DOM traversal vs. query methods
+    * 711: Styling DOM elements
+    * 712: Creating elements with JS
+    * 713: Adding elements via HTML
+    * 714: Adding elements via createElement()
+    * 715: Inserting DOM elements
+    * 716: Cloning DOM nodes
+    * 717: Live node-lists vs. static node-lists
+    * 718: Removing elements
+    * 719: Insertion and removal method summary
+    * 720: Summary: Insert, replace remove
 
-
-* 08 - Section 8: Arrays and Itterables
-    *********************************
+* 08 - Section 8: More on Arrays and Iterables
     * 800: 
         * What are 'iterables' and 'array-like' objects
         * Creating arrays
+    * 801: Which data can you store in arrays?
+    
+    *********************************        
+    * 802: Adding and removing elements
+        * push(), pop(), unshift(), shift()
+    * 803: splice()
     *********************************
 
+    * 804: Adding arrays to arrays with concat()
+
 * 09 - Section 9: More on Objects
-    *********************************
     * 900:
         * What's an object?
         * Objects vs. primimtive values
         * Objects recap
+
+    *********************************
+    * 901: Adding, modifying, and deleting properties
     *********************************
 
 
