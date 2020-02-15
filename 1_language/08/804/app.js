@@ -13,3 +13,12 @@ console.log(x2);
 
 // y is copied by value so changing x doesn't affect y :)
 console.log(y);
+
+
+// Slice can also be used to extract a sub-set of the array:
+const start_index = 1;
+const end_index = 4;
+const z = x.slice(start_index, end_index);
+console.log(z);
+
+// Negative indexes work (of course they do - geeze javascript is so awesome!)
