@@ -36,10 +36,12 @@
 
     *********************************
     * 706: Traversing the DOM
-    *********************************
-
     * 707: Traversing child nodes
     * 708: Using parentNode and parentElement
+    *********************************
+
+    
+    
     * 709: Selecting sibling elements
     * 710: DOM traversal vs. query methods
     * 711: Styling DOM elements
@@ -58,14 +60,15 @@
         * What are 'iterables' and 'array-like' objects
         * Creating arrays
     * 801: Which data can you store in arrays?
-    
-    *********************************        
     * 802: Adding and removing elements
         * push(), pop(), unshift(), shift()
     * 803: splice()
+    * 804: Selecting ranges and creating copies (by value) with slice()
+    
+    *********************************        
+    * 805: Adding arrays to arrays with concat()
     *********************************
 
-    * 804: Adding arrays to arrays with concat()
 
 * 09 - Section 9: More on Objects
     * 900:
@@ -75,6 +78,7 @@
 
     *********************************
     * 901: Adding, modifying, and deleting properties
+    * 902: Special key names and square bracket property
     *********************************
 
 
