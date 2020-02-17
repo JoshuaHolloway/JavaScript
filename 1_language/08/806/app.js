@@ -17,3 +17,9 @@ console.log(index3);
 // Start searching from right
 const index4 = y.lastIndexOf('a');
 console.log(index4);
+
+// indexOf does not work with reference values
+const personData = [{ name: 'Josh' }, { name: 'steve' }];
+const index5 = personData.indexOf({ name: 'Josh' });
+console.log(index5);
+// -1 indicates not found
