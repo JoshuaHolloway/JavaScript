@@ -64,9 +64,10 @@
         * push(), pop(), unshift(), shift()
     * 803: splice()
     * 804: Selecting ranges and creating copies (by value) with slice()
-    
-    *********************************        
     * 805: Adding arrays to arrays with concat()
+
+    *********************************        
+    * 806: Retrieving Indexes with IndexOf() and lastIndexOf()
     *********************************
 
 
