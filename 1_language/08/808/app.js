@@ -26,7 +26,6 @@ console.log(index5);
 
 // [807]
 // -Objects are reference values
-// -
 const josh = personData.find((person, index, persons) => {
     return person.name === 'Josh';
 });
@@ -40,3 +39,7 @@ const josh = personData.find((person, index, persons) => {
 //        are looking for and false for all other elements.
 //      --It will stop after finding the first instance.
 console.log(josh);
+
+// [808]: includes() is good for primitive data 
+//        (like indexOf)
+console.log(y.includes('c'));
