@@ -65,9 +65,10 @@
     * 803: splice()
     * 804: Selecting ranges and creating copies (by value) with slice()
     * 805: Adding arrays to arrays with concat()
+    * 806: Retrieving Indexes with IndexOf() and lastIndexOf()
 
     *********************************        
-    * 806: Retrieving Indexes with IndexOf() and lastIndexOf()
+    * 807: Finding stuff: find() and findIndex()
     *********************************
 
 
@@ -76,10 +77,11 @@
         * What's an object?
         * Objects vs. primimtive values
         * Objects recap
-
-    *********************************
     * 901: Adding, modifying, and deleting properties
     * 902: Special key names and square bracket property
+
+    *********************************
+    * 903: Property types and property order
     *********************************
 
 
