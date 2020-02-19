@@ -15,4 +15,4 @@ model.fit(xs, ys, { epochs: 10 }).then(() => {
     // Open the browser devtools to see the output
 });
 
-console.log('main.js');
+console.log('JOSH main.js');
