@@ -44,7 +44,7 @@ console.log(josh);
 //        (like indexOf)
 console.log(y.includes('c'));
 
-// [809]
+// [809]: forEach()
 const prices = [10.99, 5.99, 3.99, 6.59];
 const tax = 0.19;
 
@@ -61,3 +61,14 @@ console.log(taxAdjustedPrices);
 prices.forEach((val, idx, arr) => {
     console.log(`val: ${val}, idx: ${idx}, arr: ${arr}`);
 });
+
+// [810]: map()
+// -Map returns a value for each element of the array
+// -Returns a new array (with new memory address)
+const A = [1, 2, 3, 4];
+const B = A.map((val, idx, arr) => {
+    const j = val * val;
+    return j;
+});
+console.log(A);
+console.log(B);
