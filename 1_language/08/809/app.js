@@ -43,3 +43,21 @@ console.log(josh);
 // [808]: includes() is good for primitive data 
 //        (like indexOf)
 console.log(y.includes('c'));
+
+// [809]
+const prices = [10.99, 5.99, 3.99, 6.59];
+const tax = 0.19;
+
+const taxAdjustedPrices = [];
+for (const price of prices) {
+    taxAdjustedPrices.push(price * (1 + tax));
+}
+console.log(taxAdjustedPrices);
+
+// -Arg to forEarch is a function that takes up to 3-args:
+//  1. Current value
+//  2. Index
+//  2. Whole array
+prices.forEach((val, idx, arr) => {
+    console.log(`val: ${val}, idx: ${idx}, arr: ${arr}`);
+});
