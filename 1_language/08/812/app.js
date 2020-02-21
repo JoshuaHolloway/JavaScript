@@ -24,6 +24,8 @@ const index5 = personData.indexOf({ name: 'Josh' });
 console.log(index5);
 // -1 indicates not found
 
+// ========================================================
+
 // [807]
 // -Objects are reference values
 const josh = personData.find((person, index, persons) => {
@@ -40,9 +42,13 @@ const josh = personData.find((person, index, persons) => {
 //      --It will stop after finding the first instance.
 console.log(josh);
 
+// ========================================================
+
 // [808]: includes() is good for primitive data 
 //        (like indexOf)
 console.log(y.includes('c'));
+
+// ========================================================
 
 // [809]: forEach()
 const prices = [10.99, 5.99, 3.99, 6.59];
@@ -62,6 +68,8 @@ prices.forEach((val, idx, arr) => {
     console.log(`val: ${val}, idx: ${idx}, arr: ${arr}`);
 });
 
+// ========================================================
+
 // [810]: map()
 // -Map returns a value for each element of the array
 // -Returns a new array (with new memory address)
@@ -75,7 +83,7 @@ console.log(B);
 
 // ========================================================
 
-// [810]: sort() and reverse()
+// [811]: sort() and reverse()
 const X = [10.99, 5.99, 3.99, 4.56];
 let X_sorted = X.sort();
 console.log(X_sorted);
@@ -97,3 +105,15 @@ console.log(X_sorted_2);
 // reverse() just reverses the array ;)
 let X_reversed = X_sorted_2.reverse();
 console.log(X_reversed);
+
+// ========================================================
+
+// [812]: filter()
+
+// filter() takes a function that is executed on each element
+const filtered = X.filter((x, idx, arr) => {
+    return x > 4;
+});
+
+// Returns a subset of the array
+console.log(filtered);
