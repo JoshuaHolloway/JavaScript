@@ -75,7 +75,7 @@ console.log(B);
 
 // ========================================================
 
-// [810]: sort() and reverse()
+// [811]: sort() and reverse()
 const X = [10.99, 5.99, 3.99, 4.56];
 let X_sorted = X.sort();
 console.log(X_sorted);
