@@ -65,10 +65,35 @@ prices.forEach((val, idx, arr) => {
 // [810]: map()
 // -Map returns a value for each element of the array
 // -Returns a new array (with new memory address)
-const A = [1, 2, 3, 4];
+const A = [5, 2, 0, 4];
 const B = A.map((val, idx, arr) => {
     const j = val * val;
     return j;
 });
 console.log(A);
 console.log(B);
+
+// ========================================================
+
+// [810]: sort() and reverse()
+const X = [10.99, 5.99, 3.99, 4.56];
+let X_sorted = X.sort();
+console.log(X_sorted);
+
+// Default .sort() converts the contents to strings and compares
+// only the first character
+
+// Here is sorting with custom sorting rule:
+let X_sorted_2 = X.sort((a, b) => {
+    if (a > b)
+        return 1;
+    else if (a === b)
+        return 0;
+    else
+        return -1;
+});
+console.log(X_sorted_2);
+
+// reverse() just reverses the array ;)
+let X_reversed = X_sorted_2.reverse();
+console.log(X_reversed);
