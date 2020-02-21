@@ -66,10 +66,15 @@
     * 804: Selecting ranges and creating copies (by value) with slice()
     * 805: Adding arrays to arrays with concat()
     * 806: Retrieving Indexes with IndexOf() and lastIndexOf()
+    * 807: find() and findIndex()
+    * 808: includes() method
+    * 809: forEach()
 
     *********************************        
-    * 807: Finding stuff: find() and findIndex()
+    * 810: map()
     *********************************
+
+    
 
 
 * 09 - Section 9: More on Objects
@@ -84,6 +89,8 @@
     * 903: Property types and property order
     *********************************
 
+    9010: Tensorflow
+
 
 * 30 - Section 30: Performance and Optimization
     * 3000: 
@@ -92,3 +99,10 @@
 * 00 - Threads
     * 00: Web Workers vs. Service Workers vs. Worklets
         * https://bitsofco.de/web-workers-vs-service-workers-vs-worklets/
+* 09 - OpenCV
+    * 901: 
+    * 902
+* 10 - Tensorflow
+    * 1000: Linear Regression
+    * 1001: Linear Regression graphing with p5
+    * 1002: Making predictions from 2D-data
