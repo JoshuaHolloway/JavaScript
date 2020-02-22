@@ -39,8 +39,6 @@
     * 707: Traversing child nodes
     * 708: Using parentNode and parentElement
     *********************************
-
-    
     
     * 709: Selecting sibling elements
     * 710: DOM traversal vs. query methods
@@ -69,13 +67,12 @@
     * 807: find() and findIndex()
     * 808: includes() method
     * 809: forEach()
+    * 810: map()
 
     *********************************        
-    * 810: map()
+    * 811: sort() and reverse()
+    * 812: filter()
     *********************************
-
-    
-
 
 * 09 - Section 9: More on Objects
     * 900:
@@ -84,12 +81,11 @@
         * Objects recap
     * 901: Adding, modifying, and deleting properties
     * 902: Special key names and square bracket property
-
-    *********************************
     * 903: Property types and property order
-    *********************************
 
-    9010: Tensorflow
+    *********************************
+    * 904: Dynamic property access and setting properties dynamically
+    *********************************
 
 
 * 30 - Section 30: Performance and Optimization

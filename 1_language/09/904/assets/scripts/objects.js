@@ -23,3 +23,20 @@ console.log(person[1.5]);
 // NOTE:
 // -Objects properties keep their order
 // -EXCEPT: Number keys (they are sorted)
+
+// ========================================================
+
+// [904]: can have spaces in key if using square brackets:
+const keyName = 'first name';
+console.log(person[keyName]);
+console.log(person.keyName); // undefined
+
+
+// Assume we got the right side dynamically from user input:
+const userChosenKeyName = 'level';
+
+// We can add a key dynamically with square brackets on left
+let x = {
+    'name': josh,
+    [userChosenKeyName]: 'HI DUDE'
+};
