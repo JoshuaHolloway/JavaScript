@@ -59,21 +59,33 @@
         * Creating arrays
     * 801: Which data can you store in arrays?
     * 802: Adding and removing elements
-        * push(), pop(), unshift(), shift()
+        * push()
+        * pop()
+        * unshift()
+        * shift()
     * 803: splice()
-    * 804: Selecting ranges and creating copies (by value) with slice()
-    * 805: Adding arrays to arrays with concat()
-    * 806: Retrieving Indexes with IndexOf() and lastIndexOf()
-    * 807: find() and findIndex()
-    * 808: includes() method
+    * 804: Selecting ranges and creating copies (by value)
+        * slice()
+    * 805: Adding arrays to arrays
+        * concat()
+    * 806: Retrieving Indexes
+        * IndexOf()
+        * lastIndexOf()
+    * 807: 
+        * find()
+        * findIndex()
+    * 808: includes()
     * 809: forEach()
     * 810: map()
-    * 811: sort() and reverse()
+    * 811: 
+        * sort()
+        * reverse()
     * 812: filter()
     * 813: Where arrow functions shine
+    * 814: reduce()
 
     *********************************        
-    * 814: reduce()
+    * 815: split() and join()
     *********************************
 
 * 09 - Section 9: More on Objects
