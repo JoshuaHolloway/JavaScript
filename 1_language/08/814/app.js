@@ -125,3 +125,24 @@ filtered = X.filter(x => x > 4);
 
 // Returns a subset of the array
 console.log(filtered);
+
+// ========================================================
+
+// [814]: reduce()
+const a = [1, 2, 3];
+const init_value_to_start_at = 0;
+const sum = a.reduce((prevVal, currVal, currIndex, array) => {
+
+    // Return updated (currently reduced value)
+    return prevVal + currVal;
+
+}, init_value_to_start_at);
+// -The func arguement is executed for every value in the array
+// -If second arguement is not provided then it is undefined0
+//  --On the first execution, prevValue is set to init_value_to_start_at
+//      ---And currValue is the first element in the array
+//  --On the 2nd execution, prevVal is the previous currValue,
+//    and currVal is set to the 2nd value in the array, and so on.
+// -prevValue is the initial value 
+
+console.log(`sum = ${sum}`);
