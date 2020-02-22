@@ -151,3 +151,14 @@ console.log(`sum = ${sum}`);
 const sum2 = a.reduce((prevVal, currVal) => prevVal + currVal, 0);
 
 console.log(`sum2 = ${sum2}`);
+
+// ========================================================
+
+// [215]: split and join()
+const data = 'new york;10.99;200';
+const data_ = data.split(';');
+console.log(data_);
+
+// .join() is the inverse of .split()
+const data__ = data_.join('/');
+console.log(data__);
