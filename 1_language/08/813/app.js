@@ -111,9 +111,17 @@ console.log(X_reversed);
 // [812]: filter()
 
 // filter() takes a function that is executed on each element
-const filtered = X.filter((x, idx, arr) => {
+let filtered = X.filter((x, idx, arr) => {
     return x > 4;
 });
+
+// Returns a subset of the array
+console.log(filtered);
+
+// ========================================================
+
+// [813]: Where arrow functions shine
+filtered = X.filter(x => x > 4);
 
 // Returns a subset of the array
 console.log(filtered);
