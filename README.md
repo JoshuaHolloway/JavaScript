@@ -70,9 +70,10 @@
     * 810: map()
     * 811: sort() and reverse()
     * 812: filter()
+    * 813: Where arrow functions shine
 
     *********************************        
-    * 813: Where arrow functions shine
+    * 814: reduce()
     *********************************
 
 * 09 - Section 9: More on Objects

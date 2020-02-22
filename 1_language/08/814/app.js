@@ -146,3 +146,8 @@ const sum = a.reduce((prevVal, currVal, currIndex, array) => {
 // -prevValue is the initial value 
 
 console.log(`sum = ${sum}`);
+
+// Usually you only need the first two args to the anonymous function passed into reduce:
+const sum2 = a.reduce((prevVal, currVal) => prevVal + currVal, 0);
+
+console.log(`sum2 = ${sum2}`);
