@@ -142,7 +142,7 @@ const sum = a.reduce((prevVal, currVal, currIndex, array) => {
 //  --On the first execution, prevValue is set to init_value_to_start_at
 //      ---And currValue is the first element in the array
 //  --On the 2nd execution, prevVal is the previous currValue,
-//    and currVal is set to the 2nd value in the array, and so on.
+//    and currVal is set to the previous exections return value :)
 // -prevValue is the initial value 
 
 console.log(`sum = ${sum}`);
