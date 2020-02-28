@@ -196,3 +196,17 @@ const copiedPersons2 = persons.map(person => ({
 // ({}) means {} are not used to represent the function body -- {} is for object notation
 persons[0].name = 'jimbo';
 console.log(copiedPersons2);
+
+// ========================================================
+
+// [817]: Array Destructuring
+const namedData = ['Josh', 'Holloway'];
+const [firstName, lastName] = namedData;
+console.log(firstName);
+console.log(lastName);
+// Just extracts the individual elements from the array
+
+// Rest operator works also
+const namedData2 = ['Josh', 'Holloway', 1, 2, 'steve'];
+const [firstName2, lastName2, ...remainBall] = namedData2;
+console.log(remainBall);
