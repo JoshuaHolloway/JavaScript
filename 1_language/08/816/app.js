@@ -154,7 +154,7 @@ console.log(`sum2 = ${sum2}`);
 
 // ========================================================
 
-// [215]: split and join()
+// [815]: split and join()
 const data = 'new york;10.99;200';
 const data_ = data.split(';');
 console.log(data_);
@@ -164,3 +164,12 @@ console.log(data_);
 // .join() is the inverse of .split()
 const data__ = data_.join('/');
 console.log(data__);
+
+// ========================================================
+
+// [816]: (...) Spread Operator
+
+const nameFragments = ['x', 'y'];
+const copiedNameFragments = [...nameFragments];
+nameFragments.push('z');
+console.log(copiedNameFragments);
