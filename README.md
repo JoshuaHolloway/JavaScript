@@ -83,9 +83,10 @@
     * 812: filter()
     * 813: Where arrow functions shine
     * 814: reduce()
+    * 815: split() and join()
 
     *********************************        
-    * 815: split() and join()
+    * 816: (...) Spread Operator
     *********************************
 
 * 09 - Section 9: More on Objects
