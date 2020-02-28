@@ -178,3 +178,21 @@ const xxx = [4, 1, 6];
 console.log(Math.min(9,4, 6));
 console.log(Math.min(...xxx));// Takes a list of numbers as arg - not an array!
 
+const persons = [{name: 'josh', pet: 'dog'}, {name: 'steve', pet: 'mongoose'}];
+const copiedPersons = [...persons];
+
+persons.push({name: 'alen', pet: 'bat'});
+console.log(copiedPersons);
+
+// NOTE: The objects in the array are still reference values -- hence they are not copied by value with spread
+persons[1].name = 'alison';
+console.log(copiedPersons);
+
+// Can copy by value via map:
+const copiedPersons2 = persons.map(person => ({
+    name: person.name, 
+    pet: person.pet})
+    );
+// ({}) means {} are not used to represent the function body -- {} is for object notation
+persons[0].name = 'jimbo';
+console.log(copiedPersons2);
