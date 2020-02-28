@@ -173,3 +173,8 @@ const nameFragments = ['x', 'y'];
 const copiedNameFragments = [...nameFragments];
 nameFragments.push('z');
 console.log(copiedNameFragments);
+
+const xxx = [4, 1, 6];
+console.log(Math.min(9,4, 6));
+console.log(Math.min(...xxx));// Takes a list of numbers as arg - not an array!
+
