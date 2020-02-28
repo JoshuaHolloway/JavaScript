@@ -1,7 +1,4 @@
 // ==================================
-// Rest Operator: Variable number of arguments
-// const sumUp = (...numbers) => {
-// [012]
 const sumUp = (resultHandler, ...numbers) => {
 
     const validateNumber = (number) => {
@@ -17,13 +14,18 @@ const sumUp = (resultHandler, ...numbers) => {
     //return sum;
     resultHandler(sum);
 };
-
-// [012]
+//==============================
 const showResult = (result) => {
     alert('The result after adding all numbers is ' + result);
 };
-
-//console.log(sumUp(1, 5, 10, -3, 6, 10, 25, 88));
+//===========================================
+const subtractUp = function (resultHandler) {
+    let sum = 0;
+    for (const num of arguements) {
+        sum -= num;
+    }
+    resultHandler(sum);
+}
 
 // [012]
 sumUp(showResult, 1, 5, 10, -3, 6, 10, 25, 88);

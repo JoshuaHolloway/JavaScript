@@ -25,11 +25,6 @@ console.log('main.js');
 
 
 function setup() {
-    const x1 = 0;
-    const y1 = 50;
-    const x2 = 40;
-    const y2 = 60;
-
 
     for (let i = 0; i < x.length; i++) {
         // scale to see them
