@@ -108,6 +108,9 @@
 * 10 - Section 10: Classes and OOP
     * 1000: Getting started
 
+* 11 - Deep Dive: Constructors Functions and Prototypes
+    * 1100: Constructor Functions
+
 
 
 * 30 - Section 30: Performance and Optimization
