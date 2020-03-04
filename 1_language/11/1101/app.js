@@ -25,3 +25,6 @@ function Person2() {
 }
 const person2 = new Person2();
 person2.greet();
+
+// Doesn't work without new keyword
+// const person3 = Person2();
