@@ -196,3 +196,4 @@ const copiedPersons2 = persons.map(person => ({
 // ({}) means {} are not used to represent the function body -- {} is for object notation
 persons[0].name = 'jimbo';
 console.log(copiedPersons2);
+
