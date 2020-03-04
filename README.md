@@ -84,10 +84,15 @@
     * 813: Where arrow functions shine
     * 814: reduce()
     * 815: split() and join()
+    * 816: (...) Spread Operator
+    * 817: Array Destructuring
 
     *********************************        
-    * 816: (...) Spread Operator
+    * 818: Maps
+    * 819: Sets
     *********************************
+    
+    
 
 * 09 - Section 9: More on Objects
     * 900:
