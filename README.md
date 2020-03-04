@@ -91,9 +91,7 @@
     * 818: Maps
     * 819: Sets
     *********************************
-    
-    
-
+  
 * 09 - Section 9: More on Objects
     * 900:
         * What's an object?
@@ -106,6 +104,10 @@
     *********************************
     * 904: Dynamic property access and setting properties dynamically
     *********************************
+
+* 10 - Section 10: Classes and OOP
+    * 1000: Getting started
+
 
 
 * 30 - Section 30: Performance and Optimization
