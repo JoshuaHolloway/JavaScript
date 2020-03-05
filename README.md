@@ -112,6 +112,7 @@
     * 1100: Constructor Functions
     * 1101: Constructor Functions vs. Classes
         * And understanding the keyword new
+    * 1102: Introducing Prototypes
 
 
 
