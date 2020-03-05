@@ -17,6 +17,12 @@ person.greet();
 // "Constructor Function"
 // Do same thing the oldschool way
 function Person2() {
+
+    // -Creates empty object
+    // this = {};
+    // -Addes the properties below.
+    // -Then returns this
+
     this.name = 'josh';
     this.pet = 'dog';
     this.green = () => {
