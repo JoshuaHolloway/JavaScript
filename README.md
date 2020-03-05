@@ -110,6 +110,8 @@
 
 * 11 - Deep Dive: Constructors Functions and Prototypes
     * 1100: Constructor Functions
+    * 1101: Constructor Functions vs. Classes
+        * And understanding the keyword new
 
 
 
