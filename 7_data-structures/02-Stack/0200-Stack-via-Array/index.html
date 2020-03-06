@@ -5,25 +5,36 @@
         
         <script>
 
-            const pop = stack => {
-                const popped = stack.pop();
-                console.log(`${popped} was popped.  Stack now has: ${stack}`);
-                return stack.pop();
+            class Stack {
+                stack;
+                constructor() {
+                    this.stack = new Array();
+                }
+
+                push(x) {
+                    this.stack.push(x);
+                    console.log(`${x} was pushed on the stack.  Stack now has: ${this.stack}`);
+                }
+
+                pop() {
+                    const popped = this.stack.pop();
+                    console.log(`${popped} was popped.  Stack now has: ${this.stack}`);
+                    return popped;
+                }
+
+                print() {
+                    console.log(`Stack container: ${this.stack}`);
+                }
             }
 
-            const print = (stack) => {
-                console.log(`Stack container: ${stack}`);
-            }
-
-
-            let stack = [];
+            const stack = new Stack();
 
             stack.push('a');
             stack.push('b');
             stack.push('c');
 
-            print(stack);
-            pop(stack);
+            stack.print();
+            stack.pop();
 
             // stack.ushift('');
         </script>
