@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+
+    <body>
+        
+        <script>
+
+            const pop = stack => {
+                const popped = stack.pop();
+                console.log(`${popped} was popped.  Stack now has: ${stack}`);
+                return stack.pop();
+            }
+
+            const print = (stack) => {
+                console.log(`Stack container: ${stack}`);
+            }
+
+
+            let stack = [];
+
+            stack.push('a');
+            stack.push('b');
+            stack.push('c');
+
+            print(stack);
+            pop(stack);
+
+            // stack.ushift('');
+        </script>
+    </body>
+
+</html>
