@@ -119,6 +119,22 @@
 * 30 - Section 30: Performance and Optimization
     * 3000: 
 
+### 7_data-structures
+* 00: JS-Classes
+* 01: Linked Lists
+    * 0100: Singly Linked Lists
+    * 0101: Doubly Linked Lists
+    * ...
+* 02: Stacks
+* 03: Queues
+* 04: BSTs
+* 05: General Trees
+* 06: Binary Heaps
+* 07: Hash Tables
+* 08: Graphs
+    * 0800: 
+* 09: 
+
 ### 9_advanced
 * 00 - Threads
     * 00: Web Workers vs. Service Workers vs. Worklets
