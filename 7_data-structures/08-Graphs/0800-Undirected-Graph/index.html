@@ -54,14 +54,36 @@
                         
                 }
 
+                // Adding an Edge
+                addEdge(v1, v2) {
+                    // -Find in the adjacency-list the key of
+                    //  vertex-1 and push vertex-2 to the array
+                    // -Find in the adjacency-list the key of
+                    //  vertex-2 and push vertex-1 to the array
+                    //
+                    // Args:
+                    //  1. vertex-1
+                    //  2. vertex-2
+
+                    this.adj_list[v1].push(v2);
+                    this.adj_list[v2].push(v1);
+                    return this.adj_list;
+                }
+
+
                 print() {
                     console.log(this.adj_list);
                 }
             }
 
             const graph = new Graph();
-            graph.addVertex('a');
-            graph.addVertex('josh');
+            graph.addVertex('Tokyo');
+            const returned_graph = graph.addVertex('Dallas');
+            graph.print();
+            console.log(returned_graph);
+
+
+            graph.addEdge('Tokyo', 'Dallas');
             graph.print();
 
         </script>
