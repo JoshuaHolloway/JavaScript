@@ -135,6 +135,13 @@
     * 0800: 
 * 09: 
 
+## 8_algorithms
+* 00: Fundamentals
+* 01: Arrays
+* 02: Strings
+* 03: Sorting
+* 04: Searching
+
 ### 9_advanced
 * 00 - Threads
     * 00: Web Workers vs. Service Workers vs. Worklets
