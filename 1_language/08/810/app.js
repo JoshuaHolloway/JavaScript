@@ -72,3 +72,22 @@ const B = A.map((val, idx, arr) => {
 });
 console.log(A);
 console.log(B);
+
+// -Map all values from a specific property in an array of objects into an array of values:
+// https://stackoverflow.com/a/46694321
+//let result = objArray.map(a => a.foo);
+//of
+//let result = objArray.map(({ foo }) => foo)
+const obj_array = [{a: 'josh', b: 'tulsa'}, {a: 'steve', b: 'florida'}];
+const arr = obj_array.map(x => x.a);
+console.log('Array of specific property from array of objects:');
+console.log(arr);
+
+const obj = {
+    x: [{a: 'josh', b: 'tulsa'}, {a: 'steve', b: 'florida'}],
+    get_x: function() {
+        return this.x.map(v => v.a);
+    }
+};
+
+obj.get_x();
