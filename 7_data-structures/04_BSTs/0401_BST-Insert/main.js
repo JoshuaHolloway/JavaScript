@@ -7,35 +7,42 @@ class Node {
 }
 
 class BST {
-    constructor(node) {
-        this.root = node;
+    constructor(val) {
+        this.root = new Node(val);
         this.left = null;
         this.right = null;
     }
 
-    new_node(node) {
+    insert(val) {
 
         // Set to left
-        if(node.left < this.root) {
+        if(val < this.root.value) {
+            this.root.left = new Node(val);
         }
-        else if(this.root < node.right) {
+        else if(val < this.root.value) {
+            this.root.right = new Node(val);
         }
+
+        return
     }
 
     print() {
         console.log(this.root);
 
-        console.log(this.root.value);
-        console.log('/  \\');
-        console.log(`${this.root.left} ${this.root.right}`);
+        // console.log(this.root.value);
+        // console.log('/  \\');
+        // console.log(`${this.root.left} ${this.root.right}`);
 
 
     }
 }
 
-const tree1 = new BST(new Node(10));
+const tree1 = new BST(10);
 //tree1.root.right = new Node(15);
 // tree.root.left = new Node(7);
 // tree.root.left.right = new Node(9);
-
 tree1.print();
+
+
+const tree2 = new BST(10);
+tree2.insert(7);

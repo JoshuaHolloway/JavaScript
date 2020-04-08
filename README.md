@@ -12,7 +12,7 @@
 * 06 - Section 6: More on functions
     * 000: Functions vs. Methods
     * 001: Functions are Objects!
-    * 002: Functions Expressions: Storing Functions in Variables
+    * 002: Function Expressions: Storing Functions in Variables
     * 003: Function Expressions vs. Function Declarations (Statements)
     * 004: Anonymous Functions
     * 005: Adding user choice to the game
@@ -128,6 +128,8 @@
 * 02: Stacks
 * 03: Queues
 * 04: BSTs
+    * 0400: Tree Class
+    * 0401: Insert
 * 05: General Trees
 * 06: Binary Heaps
 * 07: Hash Tables
