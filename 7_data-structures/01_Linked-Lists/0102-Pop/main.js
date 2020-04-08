@@ -65,6 +65,32 @@ class SinglyLinkedList {
     print() {
         console.log(`Head: ${this.head.val},  Tail: ${this.tail.val}`);
     }
+    // ------------------------------------------
+    traverse() {
+        let current = this.head;
+        while(current !== null) {
+            console.log(current.val);
+            current = current.next;
+        }
+    }
+    // ------------------------------------------
+    pop() {
+        const temp = Object.assign(this.tail);
+
+        // set tail to node before last node:
+        //this.tail = null;
+
+
+        // set next node to null on new tail
+        
+        
+        --this.length;
+        return temp;
+    }
+
+
+
+
 
 } // SinglyLinkedList class
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -73,3 +99,12 @@ list.push('A');
 list.push('B');
 list.push('C');
 console.log(list);
+
+list.traverse();
+
+// const popped = list.pop();
+// console.log('popped: ');
+// console.log(popped);
+
+// console.log('list:');
+// console.log(list);
