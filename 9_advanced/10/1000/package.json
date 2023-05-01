@@ -9,6 +9,6 @@
   "author": "josh holloway",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs": "^1.5.2"
+    "@tensorflow/tfjs": "^4.4.0"
   }
 }
